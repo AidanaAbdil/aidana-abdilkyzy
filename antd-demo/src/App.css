@@ -1,0 +1,356 @@
+/* Social Links Section */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.social-icon i {
+  font-size: 24px;
+}
+
+
+.social-icon:nth-child(2):hover {
+  color: #333;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Container for centering and padding */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+
+
+/* Home Section */
+#home {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f9f9f9;
+  /* Light background color */
+  color: #333;
+  /* Text color */
+  padding: 40px 0;
+  /* Spacing around the section */
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  /* Heading size */
+  margin-bottom: 20px;
+  /* Space below heading */
+}
+
+/* Container for Tags */
+#skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller screens */
+  justify-content: center;
+  /* Center-align tags */
+  gap: 8px;
+  /* Space between tags */
+}
+
+/* Tag Styles */
+.tag {
+  display: inline-block;
+  /* Inline-block for flexibility */
+  padding: 10px 15px;
+  /* Inner padding for tags */
+  font-size: 0.9rem;
+  /* Font size */
+  font-weight: 600;
+  /* Semi-bold text */
+  color: #fff;
+  /* White text */
+  border-radius: 16px;
+  /* Rounded corners */
+  text-transform: capitalize;
+  /* Capitalize text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effects */
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  #skills ul {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Projects Section */
+.projects {
+  background-color: #fff;
+  /* White background for the section */
+  color: #333;
+  /* Dark text color */
+  text-align: center;
+  padding: 40px 0;
+  /* Padding around the section */
+}
+
+.projects h2 {
+  font-size: 2rem;
+  /* Large heading */
+  margin-bottom: 20px;
+  /* Spacing below heading */
+}
+
+/* Grid Container */
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+  /* Space between grid items */
+  padding: 20px;
+  /* Inner padding for the grid */
+}
+
+/* Individual Project Card */
+.projects-list {
+  background-color: #ffffff;
+  /* White card background */
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Inner padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+}
+
+/* Hover Effect for Cards */
+.projects-list:hover {
+  transform: translateY(-10px);
+  /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+
+/* Project Title */
+.projects-list h3 {
+  font-size: 1.5rem;
+  /* Medium heading size */
+  font-weight: bold;
+  /* Bold text */
+  color: #333;
+  /* Dark text color */
+  margin-bottom: 10px;
+  /* Space below the title */
+}
+
+/* Project Description */
+.projects-list p {
+  font-size: 1rem;
+  /* Standard paragraph size */
+  color: #555;
+  /* Grey text for descriptions */
+  margin-bottom: 15px;
+  /* Space below the description */
+}
+
+/* Project Link */
+.projects-list a {
+  display: inline-block;
+  /* Inline block for button styling */
+  padding: 10px 15px;
+  /* Padding inside the link */
+  background-color: #007bff;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  /* Bold text */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Hover Effect for Link */
+.projects-list a:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  #projects-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project h3 {
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
